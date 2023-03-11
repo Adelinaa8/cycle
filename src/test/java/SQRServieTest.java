@@ -7,18 +7,19 @@ public class SQRServieTest {
 
     @Test
 
-    public void testServiceWhenResultEqualsTwo() {
+    public void testService() {
         SQRService service = new SQRService();
-        int expected = 2;
-        int result = service.calcSqrt(300, 500);
+        int expected = 3;
+        int result = service.calcSqrt(200, 300);
         Assertions.assertEquals(expected, result);
+
     }
 
     @Test
-    public void testServiceWhenResultEqualsFive() {
+    public void testServiceNo() {
         SQRService service = new SQRService();
-        int expected = 5;
-        int result = service.calcSqrt(300, 500);
+        int expected = 0;
+        int result = service.calcSqrt(200, 300);
         Assertions.assertEquals(expected, result);
     }
 }
